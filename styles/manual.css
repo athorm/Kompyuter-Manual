@@ -1,5 +1,7 @@
 body
 {
+    -webkit-tap-highlight-color: transparent;
+    
     background: var(--bg-dark);
     margin: 0px;
     padding: 0px;
@@ -169,4 +171,5 @@ h4
     flex-direction: column;
     justify-content: center;
     margin: 0;
+
 }
