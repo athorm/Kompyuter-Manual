@@ -1,0 +1,136 @@
+body
+{
+    background: var(--bg-dark);
+    margin: 0px;
+    padding: 0px;
+}
+
+h1
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: var(--text-light);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+h2
+{
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+    color: var(--text-dark2);
+    text-align: center;
+}
+
+h3
+{
+    color: var(--text-dark);
+}
+
+
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 800px;
+    font-family: Arial, sans-serif;
+}
+
+.title
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section
+{
+    margin-bottom: 30px; 
+    padding: 15px;
+    border-radius: 10px;
+    background: var(--bg);
+    box-shadow: var(--shadow-l);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover
+{
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-m);
+    animation-play-state: paused;
+}
+
+.section:active {
+    transform: translateY(-2px); 
+    box-shadow: var(--shadow-s); 
+    animation-play-state: paused;
+    transition-duration: 0.05s; 
+}
+
+.section h1
+{
+    text-align: center;
+}
+
+.section p 
+{
+    text-indent: 15px;
+    color: var(--text-dark);
+    text-align: justify;
+}
+
+.section-content
+{
+    box-shadow: var(--shadow-m);
+    background-color: var(--bg2);
+    border-radius: 10px;
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-y: overlay;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.item
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: var(--bg-light);
+    box-shadow: var(--shadow-m);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.item img
+{
+    box-shadow: var(--shadow-m);
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.item-name
+{   
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.item p
+{
+    text-align: justify;
+    margin: 0;
+    color: var(--text-dark);
+}
+
+
+
+
+
+
+

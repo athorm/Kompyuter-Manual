@@ -1,0 +1,172 @@
+body
+{
+    background: var(--bg-dark);
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 800px;
+    font-family: Arial, sans-serif;
+}
+
+.section:hover
+{
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-m);
+    animation-play-state: paused;
+}
+
+.section:active {
+    transform: translateY(-2px); 
+    box-shadow: var(--shadow-s); 
+    animation-play-state: paused;
+    transition-duration: 0.05s; 
+}
+
+h1
+{
+    color: var(--text-light);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+h2
+{
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+    color: var(--text-dark2);
+    text-align: center;
+}
+
+h3
+{
+    text-align: center;
+    color: var(--text-dark);
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+    margin: 1px;
+}
+
+h4
+{
+    color: var(--text-light);
+    margin: 0;
+}
+
+.section
+{
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: var(--bg);
+    box-shadow: var(--shadow-l);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section h1
+{
+    text-align: center;
+}
+
+.section p 
+{
+    color: var(--text-dark);
+    text-align: justify;
+}
+
+.section-content
+{
+    margin-top: 20px;
+    background: var(--bg2);
+    box-shadow: var(--shadow-m);
+    border-radius: 10px;
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-y: overlay;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.item
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: var(--bg-light);
+    box-shadow: var(--shadow-m);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.sub-item
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    background: var(--bg-dark2);
+    box-shadow: var(--shadow-m);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    width: 90%;
+}
+
+.sub-img
+{
+    box-shadow: var(--shadow-m);
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+
+.img
+{
+    display: block;
+    box-shadow: var(--shadow-m);
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+
+.item-name
+{   
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.item p
+{
+    margin: 0;
+    color: var(--text-light);
+}
+
+.title
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.instruction
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}

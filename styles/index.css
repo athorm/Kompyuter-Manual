@@ -1,0 +1,145 @@
+body
+{
+    background: var(--bg-dark);
+    margin: 0px;
+    padding: 0px;
+}
+
+.section:hover
+{
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-m);
+
+    animation-play-state: paused;
+}
+
+.section:active {
+    transform: translateY(-2px); 
+    box-shadow: var(--shadow-s); 
+    animation-play-state: paused;
+    transition-duration: 0.05s; 
+}
+
+.wrapper
+{
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 800px;
+    font-family: Arial, sans-serif;
+}
+
+h1
+{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: var(--text-light);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+h2
+{
+    color: var(--text-light);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+h3
+{
+    text-align: center;
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+    color: var(--text-dark);
+}
+
+p
+{
+    text-align: center;
+    color: var(--text-dark2);
+}
+
+.section
+{
+    padding: 10px;
+    background: var(--bg);
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: var(--shadow-l);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.card-link
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+@keyframes float
+{
+    0%
+    {
+        transform: translateY(0);
+    }
+    50%
+    {
+        transform: translateY(-5px);
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+
+.float-delay-1
+{
+    animation-delay: 1.5s;
+}
+
+.float-delay-2
+{
+    animation-delay: 4s;
+}
+
+.wrapper .section:nth-child(3)
+{
+    animation-name: float;
+    animation-duration: 5.5s; /* Full cycle time */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; /* Makes the float smooth (up and then down) */
+}
+
+.wrapper .section:nth-child(4)
+{
+    animation-name: float;
+    animation-duration: 5.7s; /* Full cycle time */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; /* Makes the float smooth (up and then down) */
+}
+
+.wrapper .section:nth-child(5)
+{
+    animation-name: float;
+    animation-duration: 5.9s; /* Full cycle time */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; /* Makes the float smooth (up and then down) */
+}
+
+.description
+{
+    text-align: justify;
+    text-indent: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+
