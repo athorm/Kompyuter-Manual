@@ -1,5 +1,7 @@
 body
 {
+    -webkit-tap-highlight-color: transparent;
+    
     background: var(--bg-dark);
     margin: 0px;
     padding: 0px;
@@ -127,6 +129,7 @@ h3
     margin: 0;
     color: var(--text-dark);
 }
+
 
 
 
